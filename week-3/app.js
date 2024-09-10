@@ -37,6 +37,18 @@ sayMyName("If No One Is Around You");
 // Functions that do calculations
 
 function calcRectPerimeter(height, width) {
-  const perimeter = 2 * height + 2 * width;
-  document.querySelector("#panswer").innerHTML += perimeter;
+  const perimeter = 2 * (height + width);
+  document.getElementById("#panswer").innerHTML += perimeter;
+  document.querySelector("panswer").innerHTML += perimeter;
+}
+
+calcRectPerimeter(2, 4);
+
+function calcArea() {
+  const height = document.getElementById("height").value;
+  const width = document.getElementById("width").value;
+  console.log("height", height);
+  console.log("width", width);
+  document.querySelector("#answer").innerHTML +=
+    "Area: " + height * width + "<br/>";
 }
