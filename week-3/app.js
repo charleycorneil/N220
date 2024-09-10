@@ -50,5 +50,19 @@ function calcArea() {
   console.log("height", height);
   console.log("width", width);
   document.querySelector("#answer").innerHTML +=
-    "Area: " + height * width + "<br/>";
+    "Area: " + height * width + "<br />";
+  `Area: ${height * width} <br />;`;
 }
+
+function calRectAreaAndPeri(height, width) {
+  const perimeter = 2 * (height + width);
+  const area = height * width;
+
+  document.getElementById("multiAnswer").innerHTML += `Height: ${height} <br />
+    Width: ${width} <br />
+    Perimeter: ${Perimeter} <br />
+    Area: ${area} <br /> <br /> `;
+}
+
+calRectAreaAndPeri(5, 4);
+calRectAreaAndPeri(2, 8);
