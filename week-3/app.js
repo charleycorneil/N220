@@ -62,7 +62,41 @@ function calRectAreaAndPeri(height, width) {
     Width: ${width} <br />
     Perimeter: ${Perimeter} <br />
     Area: ${area} <br /> <br /> `;
+
+  document.getElementById("multiAnswer").innerHTML += "Height"; + height "<br />";
+  document.getElementById("multiAnswer").innerHTML += "Width"; + width "<br />";
+  document.getElementById("multiAnswer").innerHTML += "Perimeter"; + perimeter "<br />";
+  document.getElementById("multiAnswer").innerHTML += "Area"; + are "<br /> <br />";
+
 }
 
 calRectAreaAndPeri(5, 4);
 calRectAreaAndPeri(2, 8);
+
+function myFunction() {
+    alert("Who goes there?");
+}
+
+function wizard(name, occupation) {
+    // confirm("Welcome " + name + ", the " + occupation + "!");
+    confirm(`Welcome ${name}, the ${occupation}!`);
+    document.getElementById("future").innerHTML += `Welcome ${name}, the ${occupation}!`;
+}
+
+function addItem() {
+    const newItem = prompt ("Add Item:");
+    console.log(newItem);
+}
+
+function returnValue(color) {
+    return color; 
+}
+
+alert(returnValue("green"));
+
+function calcCircleArea(radius) {
+    return 2 * Math.PI * radius;
+}
+
+document.getElementById("useOne").innerHTML += calcCircleArea(2);
+document.getElementById("useTwo").innerHTML += calcCircleArea(4);
