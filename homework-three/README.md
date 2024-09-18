@@ -2,6 +2,6 @@
 
 Nane: Charley Corneil
 Date: 8/29/2024
-live URL: https://charleycorneil.github.io/N220/
+live URL: https://github.com/charleycorneil/N220.git
 Description:
 This is my Week 4 Homework-Three assigment, due September 19, 2024 at 6:00pm.
