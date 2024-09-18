@@ -100,3 +100,4 @@ function calcCircleArea(radius) {
 
 document.getElementById("useOne").innerHTML += calcCircleArea(2);
 document.getElementById("useTwo").innerHTML += calcCircleArea(4);
+
