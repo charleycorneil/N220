@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="interest-calculator">
+      <div
+        style="
+          background-color: #e0e0e0;
+          border: 1px solid #ccc;
+          padding: 20px;
+          width: 300px;
+          margin: 20px 0;
+        "
+      >
+        <label
+          for="principal"
+          style="display: inline-block; width: 100px; margin-bottom: 10px"
+          >Principal</label
+        >
+        <input
+          type="number"
+          id="principal"
+          placeholder="10000"
+          value="10000"
+          style="
+            width: 150px;
+            padding: 5px;
+            margin-bottom: 10px;
+            display: inline-block;
+          "
+        />
+
+        <label
+          for="rate"
+          style="display: inline-block; width: 100px; margin-bottom: 10px"
+          >Interest Rate</label
+        >
+        <input
+          type="number"
+          id="rate"
+          placeholder="2.56"
+          value="2.56"
+          style="
+            width: 150px;
+            padding: 5px;
+            margin-bottom: 10px;
+            display: inline-block;
+          "
+        />
+
+        <label
+          for="time"
+          style="display: inline-block; width: 100px; margin-bottom: 10px"
+          >Time (Years)</label
+        >
+        <input
+          type="number"
+          id="time"
+          placeholder="8"
+          value="8"
+          style="
+            width: 150px;
+            padding: 5px;
+            margin-bottom: 10px;
+            display: inline-block;
+          "
+        />
+
+        <button
+          onclick="calculateInterest()"
+          style="
+            display: block;
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+          "
+        >
+          Calculate
+        </button>
+      </div>
+
+      <div
+        style="
+          background-color: #e0e0e0;
+          border: 1px solid #ccc;
+          padding: 20px;
+          width: 300px;
+          margin: 20px 0;
+        "
+      >
+        <h3 style="font-size: 20px; font-weight: bold">Your Results</h3>
+        <p id="results" style="font-size: 16px"></p>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
