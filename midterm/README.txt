@@ -1,8 +1,8 @@
-# N220
-
+N220 Midterm
 Name: Charley Corneil
 Date: Tuesday, October 8, 2024
-live URL: 
+live URL: https://github.com/charleycorneil/N220/tree/main/midterm
+
 Description: 
 
 MIDTERM
